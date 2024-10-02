@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --white: #f0f0f0;
+    --light-gray: #f5f5f5;
+    --gray: #333;
+    --dark-gray: #222;
+    --black: #000;
+    --primary: #007bff;
+    --danger: #dc3545;
+    --success: #28a745;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --transparent: transparent;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --border-radius: 0.25rem;
+    --transition: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background: var(--dark-gray);
+    color: var(--white);
+}
+
+main {
+    margin: auto 0;
+}
+
+.chat-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    block-size: 100vh;
+    max-inline-size: 768px;
+    inline-size: 100%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.chat-container__chat {
+    inline-size: calc(100% - 40px);
+    position: fixed;
+    inset-block-end: 20px;
+    max-inline-size: 768px;
+}
+
+.chat-container__response-container {
+    inline-size: 100%;
+    margin-block: 40px;
+}
+
+.chat-container__response {
+    display: flex;
+    flex-flow: column;
+    inline-size: 100%;
+    gap: 20px;
+    padding-block-end: 150px;
+}
+
+.chat-container__message-text {
+    inline-size: fit-content;
+}
+
+.chat-container__message {
+    padding: 16px;
+    inline-size: 100%;
+    display: flex;
+
+    &:has(.chat-container__message--user) {
+        justify-content: flex-end
+    }
+
+    p {
+        background: var(--dark);
+        color: var(--white);
+        border-radius: 5px;
+        padding: 16px;
+        line-height: 2;
+    }
+}
+
+.chat-container__message--system {
+    border: 1px solid var(--warning);
+}
+
+.chat-container__message--user {
+    border: 1px solid var(--primary);
+    justify-content: flex-end;
+}
+
+.chat-container__response-title {
+    font-size: 24px;
+    margin-block-end: 10px;
+}
+
+.chat-container__input {
+    font-size: 18px;
+    inline-size: 100%;
+    appearance: none;
+    color: var(--white);
+    background: var(--black);
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 32px;
+    padding-inline-end: 60px;
+}
+
+
+.chat-container__button {
+    position: absolute;
+    inline-size: 50px;
+    block-size: 50px;
+    inset-block-start: calc(50% - 25px);
+    inset-inline-end: 10px;
+    appearance: none;
+    border: 1px solid var(--white);
+    background: var(--dark);
+    color: var(--white);
+    border-radius: 6px;
+}
