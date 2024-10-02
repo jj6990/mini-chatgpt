@@ -159,7 +159,6 @@ const App: React.FC = () => {
             <section className="chat-container">
                 <h1 className="chat-container__title">Chat with OpenAI API</h1>
 
-                {/* Previous Chats Section */}
                 <div className="previous-chats-container">
                     <h2 className="previous-chats-title">Previous Chats:</h2>
                     <div className="previous-chats-list-container">
