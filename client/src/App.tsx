@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import React, {useState, useRef, useEffect} from 'react';
+import {v4 as uuidv4} from 'uuid';
 import './main.css';
 
 interface MessageProps {
@@ -95,7 +95,7 @@ const App: React.FC = () => {
                 setMessages((prev) => {
                     const updatedMessages = prev.map((msg) =>
                         msg.messageId === systemMessageId
-                            ? { ...msg, text: totalResponse }
+                            ? {...msg, text: totalResponse}
                             : msg
                     );
 
@@ -110,7 +110,7 @@ const App: React.FC = () => {
                 setMessages((prev) =>
                     prev.map((msg) =>
                         msg.messageId === systemMessageId
-                            ? { ...msg, text: totalResponse }
+                            ? {...msg, text: totalResponse}
                             : msg
                     )
                 );
@@ -162,21 +162,23 @@ const App: React.FC = () => {
                 {/* Previous Chats Section */}
                 <div className="previous-chats-container">
                     <h2 className="previous-chats-title">Previous Chats:</h2>
-                    <ul className="previous-chats-list">
-                        {previousChats.map((chatHistory, index) => (
-                            <li key={chatHistory.chatId} className="previous-chat-item">
-                                <button
-                                    className="previous-chat-button"
-                                    onClick={() => loadPreviousChat(chatHistory.chatId, chatHistory.messages)}
-                                >
-                                    Load Chat {chatHistory.chatId}
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
-                    <button className="start-new-chat-button" onClick={startNewChat}>
-                        Start New Chat
-                    </button>
+                    <div className="previous-chats-list-container">
+                        <ul className="previous-chats-list">
+                            {previousChats.map((chatHistory, index) => (
+                                <li key={chatHistory.chatId} className="previous-chat-item">
+                                    <button
+                                        className="previous-chat-button"
+                                        onClick={() => loadPreviousChat(chatHistory.chatId, chatHistory.messages)}
+                                    >
+                                        Load Chat {index + 1}
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
+                        <button className="start-new-chat-button" onClick={startNewChat}>
+                            Start New Chat
+                        </button>
+                    </div>
                 </div>
 
                 <div className="chat-container__response-container">

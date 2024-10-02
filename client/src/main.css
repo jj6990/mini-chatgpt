@@ -127,3 +127,30 @@ main {
     color: var(--white);
     border-radius: 6px;
 }
+
+.previous-chats-container {
+    inline-size: 100%;
+}
+
+.previous-chats-list {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    inline-size: 100%;
+    block-size: 100%;
+    list-style: none;
+}
+
+.previous-chat-button, .start-new-chat-button {
+    appearance: none;
+    border: 1px solid var(--white);
+    background: var(--dark);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 10px;
+    inline-size: fit-content;
+}
+
+.previous-chats-list-container {
+    display: flex;
+}

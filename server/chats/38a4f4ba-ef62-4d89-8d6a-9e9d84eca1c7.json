@@ -1,0 +1,19 @@
+{
+  "chatId": "38a4f4ba-ef62-4d89-8d6a-9e9d84eca1c7",
+  "userId": "09953693-d9a1-4a21-9e11-0bc25e8a48ff",
+  "messages": [
+    {
+      "messageId": "48d5880f-dbe5-4ac4-aead-130d8e491ec3",
+      "speaker": "user",
+      "text": "Hey there",
+      "timestamp": "2024-10-02T15:38:58.777Z"
+    },
+    {
+      "messageId": "edd2890c-8d7b-44f9-a91d-1416a0dafa6f",
+      "speaker": "system",
+      "text": "Hello! How can I assist you today?",
+      "timestamp": "2024-10-02T15:38:58.777Z"
+    }
+  ],
+  "timestamp": "2024-10-02T15:39:00.293Z"
+}

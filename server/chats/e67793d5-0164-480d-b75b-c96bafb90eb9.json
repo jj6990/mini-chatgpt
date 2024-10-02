@@ -1,0 +1,43 @@
+{
+  "chatId": "e67793d5-0164-480d-b75b-c96bafb90eb9",
+  "userId": "09953693-d9a1-4a21-9e11-0bc25e8a48ff",
+  "messages": [
+    {
+      "messageId": "f10c4285-197b-4df1-8b4a-88cfa3e70ef7",
+      "speaker": "user",
+      "text": "Hey",
+      "timestamp": "2024-10-02T15:48:32.435Z"
+    },
+    {
+      "messageId": "42859651-fc6a-4d35-a5c6-faee921d2ffc",
+      "speaker": "system",
+      "text": "Hello! How can I assist you today?",
+      "timestamp": "2024-10-02T15:48:32.435Z"
+    },
+    {
+      "messageId": "73e3d1f5-d550-46b5-a262-7aa501dd8191",
+      "speaker": "user",
+      "text": "which is the best route to guayaquil from Quito",
+      "timestamp": "2024-10-02T15:48:50.885Z"
+    },
+    {
+      "messageId": "79f8f547-cb2a-420b-af3e-debfaf8220f1",
+      "speaker": "system",
+      "text": "The most common and fastest route to Guayaquil from Quito is via E40 and Highway 35, also known as Pan-American Highway:1. Get on Autopista Rumiñahui from Av. Gran Colombia and Av. 10 de Agosto.2. Continue on Autopista General Rumiñahui. Take E35 and Troncal de la Sierra/E40 to Guayaquil.This route will take approximately 6 to 8 hours, depending on traffic and speed, as the distance is about 420 km. I would recommend checking the current traffic situation before you leave.",
+      "timestamp": "2024-10-02T15:48:50.885Z"
+    },
+    {
+      "messageId": "98ead850-6665-43f4-99e8-a0e2b8c833ed",
+      "speaker": "user",
+      "text": "thanks",
+      "timestamp": "2024-10-02T15:49:20.536Z"
+    },
+    {
+      "messageId": "79abf111-c8f1-45d4-8082-e58bc7b49120",
+      "speaker": "system",
+      "text": "You're welcome! If you have any other questions, feel free to ask.",
+      "timestamp": "2024-10-02T15:49:20.536Z"
+    }
+  ],
+  "timestamp": "2024-10-02T15:49:22.957Z"
+}
